@@ -7,9 +7,6 @@ import csv
 import json
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import bs4 as bs
-import urllib.request
-import requests
 
 
 
@@ -129,11 +126,6 @@ def main(movie_name):
         
         else:    
             m_name = movie_name
-            
-            # with open('movieR.csv', 'a',newline='') as csv_file:
-            #     fieldnames = ['Movie']
-            #     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-            #     writer.writerow({'Movie': m_name})
             result_final = recommend(m_name)
             names = []
             dates = []
