@@ -3,3 +3,6 @@ numpy
 numpy
 pandas
 scikit_learn
+pickle
+csv
+json
