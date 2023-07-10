@@ -13,10 +13,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Flask constructor
 app = Flask(__name__)
 
-dataframe= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\new_df.pkl",'rb'))
+# dataframe= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\new_df.pkl",'rb'))
+dataframe= pd.read_pickle(open(r"static\new_df.pkl",'rb'))
 movies_name_list= dataframe['original_title'].values.tolist()
 
-df2= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\og_data.pkl",'rb'))
+# df2= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\og_data.pkl",'rb'))
+df2= pd.read_pickle(open(r"static\og_data.pkl",'rb'))
 
 vectorizer = CountVectorizer(max_features=5000,stop_words='english')
 v=vectorizer.fit_transform(dataframe['tags'])
