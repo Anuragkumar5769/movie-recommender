@@ -1,5 +1,7 @@
 Flask
-numpy==1.23.3
-numpy==1.25.0
-pandas==2.0.2
-scikit_learn==1.2.2
+numpy
+numpy
+pandas
+scikit_learn
+gunicorn
+pickle5
