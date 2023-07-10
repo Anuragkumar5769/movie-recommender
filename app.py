@@ -150,5 +150,11 @@ def main(movie_name):
        
 
 
-if __name__=='__main__':
-    app.run(debug=True)
+# if __name__=='__main__':
+#     app.run(debug=True)
+
+def run():
+    app.run()
+
+if __name__ == "__main__":
+    run()
