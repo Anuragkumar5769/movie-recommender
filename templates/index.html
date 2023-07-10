@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie recommender</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    
+</head>
+<body>
+
+    <script> var movies_name_list = {{ movies_name_list|tojson }}; </script>
+
+    <center><h1 class="tle">Movie Recommendations System</h1></center>
+
+    <div class="search-box">
+        <form action="{{ url_for("home")}}" id="form-id" name="form_name" method="POST" autocomplete="off">
+            <div class="search-space">
+                <input  id="autoComplete" name="movie-name_input" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" maxlength="2048" tabindex="1"> 
+                <button class="search-button" type="submit">Search</button> 
+            </div>
+
+                
+            </div>   
+            </form>
+    </div>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='autoComplete.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='recommend.js')}}"></script>
+    
+</body>
+</html>

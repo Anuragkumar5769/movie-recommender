@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>negative</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='nya.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='neg.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <a href="/"><div class="icon icon-fill"><i class="fa fa-home"></i></div></a>
+   <center> <h1 style="color: red;">Whoops!</h1>
+<p style="color: powderblue;">
+We couldn't find the recommendation for the movie. Did you type it correctly?
+<br>
+
+</p></center>
+
+<br>
+<br>
+
+<center><h2 style="color: coral;">Movies you may like:</h2></center>
+
+<div class="container">
+    <div class="cellphone-container" id="recommend_movies1">    
+        <div class="movie">       
+          <div class="movie-img" id="img1"></div>
+          <div class="text-movie-cont pcard">
+            <div class="mr-grid">
+              <div class="col1">
+                <h1>{{movie_title[1]}}</h1>
+                <ul class="movie-gen">
+                  <li>{{movie_type[1]}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mr-grid summary-row">
+              <div class="col2">
+                <h5>SUMMARY</h5>
+              </div>
+              <div class="col2">
+                 <ul class="movie-likes">
+                  <li>{{Ratings[1]}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mr-grid">
+              <div class="col1">
+                <p class="movie-description">{{movie_overview[1]}} </p>
+              </div>
+            </div>
+            <div class="mr-grid actors-row">
+              <div class="col1">
+                <p class="movie-actors">{{cast[1]}}</p>
+              </div>
+            </div>
+            <div class="mr-grid action-row fcard" >
+              <div class="col2"><div id="t1" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="cellphone-container" id="recommend_movies2">    
+      <div class="movie">       
+        <div class="movie-img" id="img2"></div>
+        <div class="text-movie-cont pcard">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{movie_title[2]}}</h1>
+              <ul class="movie-gen">
+                <li>{{movie_type[2]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>SUMMARY</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li>{{Ratings[2]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{movie_overview[2]}} </p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">{{cast[2]}}</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row fcard">
+            <div class="col2"><div id="t2" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="cellphone-container" id="recommend_movies3">    
+      <div class="movie">       
+        <div class="movie-img" id="img3"></div>
+        <div class="text-movie-cont pcard">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{movie_title[3]}}</h1>
+              <ul class="movie-gen">
+                <li>{{movie_type[3]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>SUMMARY</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li>{{Ratings[3]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{movie_overview[3]}} </p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">{{cast[3]}}</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row fcard">
+            <div class="col2"><div id="t3" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+          </div>     
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="cellphone-container" id="recommend_movies4">    
+        <div class="movie">       
+          <div class="movie-img" id="img4"></div>
+          <div class="text-movie-cont pcard">
+            <div class="mr-grid">
+              <div class="col1">
+                <h1>{{movie_title[4]}}</h1>
+                <ul class="movie-gen">
+                  <li>{{movie_type[4]}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mr-grid summary-row">
+              <div class="col2">
+                <h5>SUMMARY</h5>
+              </div>
+              <div class="col2">
+                 <ul class="movie-likes">
+                  <li>{{Ratings[4]}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mr-grid">
+              <div class="col1">
+                <p class="movie-description">{{movie_overview[4]}}</p>
+              </div>
+            </div>
+            <div class="mr-grid actors-row">
+              <div class="col1">
+                <p class="movie-actors">{{cast[4]}}</p>
+              </div>
+            </div>
+            <div class="mr-grid action-row fcard">
+              <div class="col2"><div id="t4" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="cellphone-container" id="recommend_movies5">    
+      <div class="movie">       
+        <div class="movie-img" id="img5"></div>
+        <div class="text-movie-cont pcard">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{movie_title[5]}}</h1>
+              <ul class="movie-gen">
+                <li>{{movie_type[5]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>SUMMARY</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li>{{Ratings[5]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{movie_overview[5]}} </p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">{{cast[5]}}</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row fcard">
+            <div class="col2"><div id="t5" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <div class="cellphone-container" id="recommend_movies6">    
+      <div class="movie">       
+        <!-- <div class="menu"><i class="material-icons"></i></div> -->
+        <div class="movie-img" id="img6"></div>
+        <div class="text-movie-cont pcard">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{movie_title[0]}}</h1>
+              <ul class="movie-gen">
+                <!-- <li>PG-13  /</li> -->
+                <!-- <li>2h 49min  /</li> -->
+                <li>{{movie_type[0]}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>SUMMARY</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li>{{Ratings[0]}}</li>
+                <!-- <li><i class="material-icons">&#xE813;</i>3</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{movie_overview[0]}}</p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">{{cast[0]}}</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row fcard">
+            <div class="col2"><div id="t6" class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+            </div>
+            <!-- <div class="col6 action-btn"><i class="material-icons">&#xE161;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE866;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE80D;</i>
+            </div> -->
+
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <script> var film1 = {{ movie_title[1]|tojson }}; 
+    var film2 = {{ movie_title[2]|tojson }}; 
+    var film3 = {{ movie_title[3]|tojson }}; 
+    var film4 = {{ movie_title[4]|tojson }}; 
+    var film5 = {{ movie_title[5]|tojson }}; 
+    var film6 = {{ movie_title[0]|tojson }}; </script>
+<script>
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[1]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img1').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[2]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img2').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[3]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img3').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[4]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img4').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[5]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img5').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[0]}}+"?api_key=06412c2ac60d3b3a66c7fb129dcaca28&language=en-US")
+    .then((response) => response.json())
+    .then((data) => {
+    const value = data.poster_path;
+    //Apply HTML src
+
+     var urlString = "url('https://image.tmdb.org/t/p/original" + value + " ')";
+     document.getElementById('img6').style.backgroundImage = urlString;
+	//  document.getElementById('image1').style.backgroundRepeat = "no-repeat";
+	  // document.getElementById('image1').style.backgroundSize = "cover";
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[1]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t1").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+}) 
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[2]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t2").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+})
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[3]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t3").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+})
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[4]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t4").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+})
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[5]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t5").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+})
+});
+
+fetch("https://api.themoviedb.org/3/movie/"+{{movieid[0]}}+"/videos?api_key=06412c2ac60d3b3a66c7fb129dcaca28&append_to_response=videost")
+.then((response) => response.json())
+.then((data) => {
+const value = data.results[0].key
+
+//Apply HTML src
+document.getElementById("t6").addEventListener('click',()=>{
+  
+  window.open('https://www.youtube.com/watch?v='+value , "_blank");
+})
+});
+</script>
+
+<script type="text/javascript" src="{{url_for('static', filename='recommend.js')}}"></script>
+</body>
+</html>
