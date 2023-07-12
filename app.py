@@ -14,16 +14,22 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 
 # dataframe= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\new_df.pkl",'rb'))
-dataframe= pd.read_pickle(open('new_df.pkl','rb'))
+# dataframe= pd.read_pickle(open('new_df.pkl','rb'))
+# with open('new_df.pkl', "rb") as fh:
+#   dataframe = pickle.load(fh)
 # file = open('new_df.pkl','rb')
 # dataframe =pickle.load(file)
+dataframe= pd.read_csv('new_df.csv')
 
 movies_name_list= dataframe['original_title'].values.tolist()
 
 # df2= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\og_data.pkl",'rb'))
-df2= pd.read_pickle(open('og_data.pkl','rb'))
+# df2= pd.read_pickle(open('og_data.pkl','rb'))
+# with open('og_data.pkl', "rb") as fhb:
+#   df2 = pickle.load(fhb)
 # file2= open('og_data.pkl','rb')
 # df2= pickle.load(file2)
+df2= pd.read_csv('og_data.csv')
 
 
 vectorizer = CountVectorizer(max_features=5000,stop_words='english')
