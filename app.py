@@ -15,10 +15,16 @@ app = Flask(__name__)
 
 # dataframe= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\new_df.pkl",'rb'))
 dataframe= pd.read_pickle(open('new_df.pkl','rb'))
+# file = open('new_df.pkl','rb')
+# dataframe =pickle.load(file)
+
 movies_name_list= dataframe['original_title'].values.tolist()
 
 # df2= pd.read_pickle(open(r"C:\Users\anura\OneDrive\Desktop\web development\flask-wala\static\og_data.pkl",'rb'))
 df2= pd.read_pickle(open('og_data.pkl','rb'))
+# file2= open('og_data.pkl','rb')
+# df2= pickle.load(file2)
+
 
 vectorizer = CountVectorizer(max_features=5000,stop_words='english')
 v=vectorizer.fit_transform(dataframe['tags'])
@@ -150,11 +156,11 @@ def main(movie_name):
        
 
 
-# if __name__=='__main__':
-#     app.run(debug=True)
+if __name__=='__main__':
+    app.run(debug=True)
 
-def run():
-    app.run()
+# def run():
+#     app.run()
 
-if __name__ == "__main__":
-    run()
+# if __name__ == "__main__":
+#     run()
